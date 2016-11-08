@@ -5,7 +5,7 @@ A {
 color: #0074A2; 
 }
 A:hover {
-    color: #003300;
+color: #003300;
 }
 .bar {
 border-color: red;
@@ -44,18 +44,25 @@ border-style: none;
 
 }
 nav {
-margin: 20px;
-padding: 10px;
-border-color: #EDEDED;
-border-top-style: solid;
-border-bottom-style: solid;
-border-left-style: none;
-border-right-style: none;
+padding: 1px;
+border-style: none;
+}
+nav .n1 {
+position: relative;
+bottom: -10px;
+right: -15px;
+line-height: 1px;
+}
 
-
+nav .n2 {
+position: relative;
+bottom: 20px;
+left: 550px;
 }
 .content { 
-margin: 20px;
+margin: -10px;
+margin-right: 20px;
+margin-left: 20px;
 padding: 20px;
 border-color: green;
 border-style: solid;
