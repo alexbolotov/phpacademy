@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Форма №1</title>
+<!-- Ключевые слова для поиска -->
+<meta name="keywords" content="Задание, таблица, форма">
+<!-- Дескриптор страницы -->
+<meta name="description" content="Создать форму и таблицу 5х2.">
+<!-- Автор контента -->
+<meta name="author" content="Александр Болотов">
+</head>
+<body>
+<blockquote>
+<small>
+<b>Группа:</b> 29.10_Инт_Сб(10:00-14:00)_<br>
+<b>Студент:</b> Александр Болотов<br>	
+<b>Задание:</b> В форму из предыдущего задания добавить новые элементы: Gender - для выбора пола, и Application For - для выбора типа заявки c несколькими вариантами, которые можно комбинировать 
+</small>
+</blockquote>
+<h1>Форма №1 </h1>(Для того чтобы мы могли связаться с Вами в ближайшее время, <br> заполните форму и нажмите кнопку отправить)
+<p>
+<form name="form1" method="post" action="">
+<table border="2">
+<tr>
+<td align="right"><label for="name">Ваше имя: </label></td>
+<td><input type="text" name="name" id="name" placeholder="Имя" /></td>
+</tr>
+<tr>
+<td align="right"><label for="email">Email: </label></td>
+<td><input type="email" name="email" id="email" placeholder="Ваш email" /></td>
+</tr>
+<tr>
+<td><label for="phone">Номер телефона: </label></td>
+<td><input type="text" name="phone" id="phone" placeholder="Номер телефона" /></td>
+</tr>
+<tr>
+<td align="right"><label for="gender">Ваш пол: </label></td>
+<td><input type="radio" name="gender" id="gender" value="male" /> Мужской <br>
+<input type="radio" name="gender" id="gender" value="female" /> Женский </td>
+</tr>
+<tr>
+<td align="right"><label for="subscribe">Заявка: </label></td>
+<td>
+Подключение <input type="checkbox" name="subscribe_new" checked> <br>
+Финансы &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="subscribe_many"> <br>
+Поддержка &nbsp;&nbsp;&nbsp; <input type="checkbox" name="subscribe_support"></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><textarea rows="5" cols="45" name="message" id="message" placeholder="В это поле введите Ваше сообщение..."></textarea></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" value="       Отправить       " /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
