@@ -1,0 +1,98 @@
+* {
+font-family: Tahoma;
+}
+A { 
+color: #0074A2; 
+}
+A:hover {
+    color: #003300;
+}
+.bar {
+border-color: red;
+}
+.bar > b {
+color: #FF3399;
+}
+
+.bold {
+font-weight: bold;
+}
+.italic {
+font-style: italic;
+}
+.underlined {
+text-decoration: underline;
+}
+.container {
+width: 1000px;
+padding: 0px;
+margin: 0 auto;
+border:1px;
+border-color: black;
+border-style: dashed;
+background-color: white;
+border-radius: 25px 25px 0 0;
+}
+
+header {
+margin: 0 auto;
+padding: 0px;
+height: 234px;
+font-style: italic;
+right: 0px;
+border-style: none;
+
+}
+nav {
+margin: 20px;
+padding: 10px;
+border-color: #EDEDED;
+border-top-style: solid;
+border-bottom-style: solid;
+border-left-style: none;
+border-right-style: none;
+
+
+}
+.content { 
+margin: 20px;
+padding: 20px;
+border-color: green;
+border-style: solid;
+}
+footer {
+margin: 0 auto;
+padding: 10px;
+height: 20px;
+border-style: none;
+} 
+footer img {
+width: 50px;
+}
+
+.contact-form {
+border: 2px solid #444;
+margin: 0 auto;
+width: 700px;
+padding: 10px;
+color: #403E3F;
+}
+
+.flower {
+float: left;
+margin-left: 50px;
+z-index:7;
+
+    position: relative; /* Абсолютное позиционирование */
+    bottom: 200px; /* Положение от нижнего края */
+    right: 15px; /* Положение от правого края */
+    line-height: 1px;
+}
+.flower > img {
+height: 50px;
+margin-left: 50px;
+
+}
+sup {
+font-size: 5pt;
+}
