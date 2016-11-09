@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>another web site</title>
+<!-- Ключевые слова для поиска -->
+<meta name="keywords" content="Задание, сайт, теги">
+<!-- Дескриптор страницы -->
+<meta name="description" content="Сделать вебсайт на несколько страниц с использованием тех тегов, которые учили на занятии.">
+<!-- Автор контента -->
+<meta name="author" content="Александр Болотов">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body bgcolor="#E5E5E5">
+	
+<blockquote>
+<small>
+<b>Группа:</b> 29.10_Инт_Сб(10:00-14:00)_<br>
+<b>Студент:</b> Александр Болотов<br>	
+<b>Задание:</b> Сделать вебсайт на несколько страниц с использованием тех тегов, которые учили на занятии.
+</blockquote>
+
+<div class="container"> 
+<header><img style="border-radius: 25px 25px 0 0;" src="img/header.png" width="1000" height="234"><div class="flower"> <h1>Alex Bolotov <sup> TM</sup></h1> another web site</div>
+</header>
+
+<nav><div class="n1">
+<a href="index.html">Home </a> | 
+<a href="tables.html"> Tables </a> | 
+<a href="form.html"> Form </a> |
+<a href="resume.html"> Resume </a>
+</div> 
+<div class="n2">
+<a href="http://www.twitter.com" target="_blank"><img src="img/t.png" width="30" height="30" alt="twitter"></a> 
+<a href="http://www.ok.com" target="_blank"><img src="img/ok.png" width="30" height="30" alt="Ok"></a> 
+<a href="http://www.vk.com" target="_blank"><img src="img/b.png" width="30" height="30" alt="Bk"></a> 
+<a href="https://www.google.com.ua/" target="_blank"><img src="img/g.png" width="30" height="30" alt="Google+"></a> 
+<a href="http://www.facebook.com" target="_blank"><img src="img/f.png" width="30" height="30" alt="facebook"></a> 
+</div></nav>
+<div class="content">
+
+<h1>Форма №1 </h1>
+<p>
+<form id="form1" method="post" action="" enctype="multipart/form-data">
+<table align="center">
+<tr><th colspan="2">  Заполните форму и нажмите кнопку "Отправить"</th></tr>
+<tr>
+<td align="right"><label for="name">Ваше имя: </label></td>
+<td><input type="text" name="name" id="name" placeholder="Имя" /></td>
+</tr>
+<tr>
+<td align="right"><label for="email">Email: </label></td>
+<td><input type="email" name="email" id="email" placeholder="Ваш email" /></td>
+</tr>
+<tr>
+<td><label for="phone">Номер телефона: </label></td>
+<td><input type="text" name="phone" id="phone" placeholder="Номер телефона" /></td>
+</tr>
+<tr>
+<td align="right"><label for="gender">Ваш пол: </label></td>
+<td><input type="radio" name="gender" id="gender" value="male" /> Мужской <br>
+<input type="radio" name="gender" id="gender" value="female" /> Женский </td>
+</tr>
+<tr>
+<td align="right"><label for="subscribe">Заявка: </label></td>
+<td>
+Подключение <input type="checkbox" name="subscribe_new" checked> <br>
+Финансы &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="subscribe_many"> <br>
+Поддержка &nbsp;&nbsp;&nbsp; <input type="checkbox" name="subscribe_support"></td>
+</tr>
+<tr>
+<td align="right"><label for="country">Ваш страна: </label></td>
+<td>
+<select name="country">
+<option selected value="null">Выберите страну</option>
+<option value="ua">Украина</option>
+<option value="ga">Гандурас</option>
+<option value="na">Намибия</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="right"><label for="resume">Ваше резюме: </label></td>
+<td><input type="file" name="resume" id="resume" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><textarea rows="5" cols="45" name="message" id="message" placeholder="В это поле введите Ваше сообщение..."></textarea></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" value="       Отправить       " /></td>
+</tr>
+</table>
+<input type="hidden" name="date" id="date" value="01.11.2016" />
+</form>
+		<script>
+
+			jQuery("#contForm1").submit(function(){
+				jQuery.post(
+					'send.php',
+					jQuery( "#contForm1" ).serialize(),
+					function( data ) {
+				  jQuery( ".result" ).html( data );
+				});
+				
+				return false;
+			});
+		</script>
+</div>
+<footer><center>2016 &copy; Alex Bolotov by PHP Academy</center> <img src="img/footer.png" align="right"></footer>
+</div>
+</body>
+</html>
