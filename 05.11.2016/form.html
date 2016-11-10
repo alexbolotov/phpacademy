@@ -82,7 +82,7 @@
 </td>
 </tr>
 <tr>
-<td align="right"><label for="resume">Ваше резюме: </label></td>
+<td align="right"><label for="resume">Ваш файл: </label></td>
 <td><input type="file" name="resume" id="resume" /></td>
 </tr>
 <tr>
@@ -94,19 +94,6 @@
 </table>
 <input type="hidden" name="date" id="date" value="01.11.2016" />
 </form>
-		<script>
-
-			jQuery("#contForm1").submit(function(){
-				jQuery.post(
-					'send.php',
-					jQuery( "#contForm1" ).serialize(),
-					function( data ) {
-				  jQuery( ".result" ).html( data );
-				});
-				
-				return false;
-			});
-		</script>
 </div>
 <footer><center>2016 &copy; Alex Bolotov by PHP Academy</center> <img src="img/footer.png" align="right"></footer>
 </div>
